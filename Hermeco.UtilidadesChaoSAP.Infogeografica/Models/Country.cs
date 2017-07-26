@@ -5,10 +5,10 @@ using System.Text;
 
 namespace Hermeco.UtilidadesChaoSAP.Infogeografica.Models
 {
-    class Country
+    public class Country
     {
-        int ID {get; set;}
-        string Code { get; set; }
-        string Name {get; set;}
+        public virtual int ID { get; set; }
+        public virtual string Code { get; set; }
+        public virtual string Name {get; set;}
     }
 }

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Hermeco.UtilidadesChaoSAP.Infogeografica.Models
 {
-    class Department
+    public class Department
     {
-        string ID { get; set; }
-        string Code { get; set; }
-        string Name { get; set; }
-        Country Country { get; set; }
+        public virtual string ID { get; set; }
+        public virtual string Code { get; set; }
+        public virtual string Name { get; set; }
+        public virtual Country Country { get; set; }
     }
 }
