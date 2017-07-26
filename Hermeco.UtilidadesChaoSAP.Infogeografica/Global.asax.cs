@@ -22,6 +22,8 @@ namespace Hermeco.UtilidadesChaoSAP.Infogeografica
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            //GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings
+            //                .ContractResolver = new NHibernateContractResolver();
         }
     }
 }

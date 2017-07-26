@@ -12,8 +12,8 @@ namespace Hermeco.UtilidadesChaoSAP.Infogeografica.Models.Mappings
         {
             Table("country");
             Id(x => x.ID);
-            Map(x => x.Code).Column("country_code"); 
-            Map(x => x.Name).Column("country_name"); 
+            Map(x => x.Code).Column("country_code");
+            Map(x => x.Name).Column("country_name");
         }
     }
 }

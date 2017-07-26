@@ -14,7 +14,7 @@ namespace Hermeco.UtilidadesChaoSAP.Infogeografica.Models.Mappings
             Id(d => d.ID);
             Map(d => d.Code).Column("department_code");
             Map(d => d.Name).Column("department_name");
-            References(d => d.Country);
+            References(d => d.Country).Not.LazyLoad(); 
         }
     }
 }
