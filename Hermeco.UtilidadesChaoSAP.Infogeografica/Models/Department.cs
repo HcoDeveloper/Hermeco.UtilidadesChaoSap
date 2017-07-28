@@ -16,14 +16,15 @@ namespace Hermeco.UtilidadesChaoSAP.Infogeografica.Models
 
         internal static Department GetDepartment(string name)
         {
-
+            name = Utilities.RemoveSpecialCharacters(name);
+            name = Utilities.RemoveDiacritics(name);
             Department department = new Department();
             try
             {
                 using (var session = NHibernateHelper.OpenSession())
                 {
                     var countryQuery = session.QueryOver<Department>()
-                    .Where(x => x.Name == Utilities.RemoveSpecialCharacters(name))
+                    .Where(x => x.Name == name.ToUpper().Trim())
                     .List();
 
                     department = countryQuery.First();
